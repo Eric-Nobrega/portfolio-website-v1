@@ -1,0 +1,71 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    height: 500px;
+    background-color: white;
+    padding: 50px;
+}
+
+/* .hero will inherit height/border properties from section above */
+.hero{
+    background-color: #262A2B;
+    /*100% of Viewport Height = Adapts to the browser the page is being viewed on*/
+    height: 100vh;
+    color: white;
+    /* Default Font Size For Hero Section*/
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 200px;
+    justify-content: space-around;
+    font-size: 25px;
+    
+}
+
+li{
+    width: 100px;
+    text-decoration: none;
+}
+
+footer{
+    height: 500px;
+    background-color: grey;
+}
+
+.cv_div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.button{
+    width: 150px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #1E6FD9;
+    font-size: 18px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.aboutme{
+    width: 600px;
+    padding: 75px;
+}
+
+.image{
+    width: 500px;
+    padding: 75px;
+    float: right;
+}
