@@ -1,21 +1,33 @@
+/* Override Default Browser Margin & Padding Properties*/
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
 body{
     font-family: 'Poppins', sans-serif;
 }
 
 section{
-    height: 500px;
-    background-color: white;
+    height: 600px;
+    background-color: #262A2B;
     padding: 50px;
 }
 
-/* .hero will inherit height/border properties from section above */
-.hero{
+/* .homepage will inherit height/border properties from section above */
+.homepage{
     background-color: #262A2B;
     /*100% of Viewport Height = Adapts to the browser the page is being viewed on*/
     height: 100vh;
     color: white;
-    /* Default Font Size For Hero Section*/
+    /* Default Font Size For Homepage Section*/
     font-size: 30px;
+}
+
+.image{
+    width: 500px;
+    padding: 75px;
+    float: right;
 }
 
 nav{
@@ -29,8 +41,7 @@ ul{
     list-style-type: none;
     width: 200px;
     justify-content: space-around;
-    font-size: 25px;
-    
+    font-size: 25px;  
 }
 
 li{
@@ -39,8 +50,11 @@ li{
 }
 
 footer{
-    height: 500px;
-    background-color: grey;
+    height: 100px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
 }
 
 .cv_div{
@@ -59,13 +73,51 @@ footer{
     line-height: 75px;
 }
 
+.cvbutton{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .aboutme{
     width: 600px;
     padding: 75px;
 }
 
-.image{
-    width: 500px;
-    padding: 75px;
-    float: right;
+.project-card{
+    width:33%;
+    height:400px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: 30px;
+    margin-bottom: 0px;
 }
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+
+.project-image{
+    width: 100%;
+    height: 100%;
+}
+
+.project-title{
+    color: white;
+    text-align: center;
+}
+
+.project-description{
+    color: white;
+    text-align: center;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+   }

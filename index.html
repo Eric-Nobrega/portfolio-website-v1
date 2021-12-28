@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="main-stylesheet.css">
 </head>
 <body>
-    <!--Hero Section-->
+    <!--Homepage Section-->
     <!--Given class as this section will have different properties-->
-    <section class="hero">
+    <section class="homepage">
         <nav>
             <div style="padding-top: 25px;">Eric Nobrega.</div>
             <ul>
-                <li>My CV</li>
-                <li>Projects</li>
+                <li><a href="resume.pdf">My CV</a></li>
+                <li><a href="https://github.com/Eric-Nobrega">Projects</a></li>
             </ul>
         </nav>
         <div class="image">
@@ -30,14 +30,51 @@
                 My goal is to expand my knowledge in several
                 areas of technology and software development.
            </p>
-           <div class="cv_div">
-            <div class="button">Download CV</div>
+           <form method="get" action="resume.pdf">
+            <div class="button">
+                <button class="cvbutton" type="submit">Download CV</button>
+            </div>
+           </form>
     </section>
 
+    <!--Projects Section-->
+    <section id="projects">
+        <h1 style="color: white; text-align: center;">My Projects.</h1>
+        <h4 style="color: white; text-align: center;">(Another Project Of Mine.)</h4>
+        <div class="project-container">
+            <div class="project-card">
+                <img class=project-image src="images/ebudget.PNG">
+                <div class="project-title">
+                    EBudget: Personal Budgeting Tool</div>
+                    <div class="project-description">
+                        <a href="https://github.com/Eric-Nobrega/EBudget">Project Link</a>
+                    </div>
+            </div>
+            <div class="project-card">
+                <img class=project-image src="images/bitcoinpricebot.PNG">
+                <div class="project-title">
+                    BTC Price Bot</div>
+                    <div class="project-description">
+                        <a href="https://github.com/Eric-Nobrega/btcPriceBot">Project Link</a>
+                    </div>
+            </div>
+            <div class="project-card">
+                <img class=project-image src="images/interactiveclock.PNG">
+                <div class="project-title">
+                    Interactive City Clock</div>
+                    <div class="project-description">
+                        <a href="https://github.com/Eric-Nobrega/Bootcamp-Project-Interactive-Clock">Project Link</a>
+                    </div>
+            </div>
+        </div>
+    </section>
 
-    <section></section>
-    <section></section>
-    <footer></footer>
+     <footer>
+        <div style="font-size: 35px;">Get in touch</div>
+        <div style="float: right; font-size: 25px;">endev01@gmail.com</div>
+        <div>Feel Free To Contact Me To Discuss Further Enquiries You May Have.</div>
+        <div>Website Designed And Developed By Me.</div>
+    </footer>
 
 
 
