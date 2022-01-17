@@ -10,6 +10,7 @@ body{
 
 section{
     height: 600px;
+    width: auto;
     background-color: #262A2B;
     padding: 50px;
 }
@@ -37,15 +38,16 @@ nav{
 }
 
 ul{
-    display: flex;
+    display:flex;
     list-style-type: none;
-    width: 200px;
+    min-width: fit-content;
     justify-content: space-around;
     font-size: 25px;  
 }
 
 li{
-    width: 100px;
+    width: fit-content;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -90,26 +92,33 @@ footer{
 
 .project-card{
     width:33%;
-    height:400px;
+    height:375;
     box-shadow: 5px 5px 20px rgb(0, 0, 0);
-    margin: 30px;
+    margin: 10px;
     margin-bottom: 0px;
 }
 
 .project-container{
     display: flex;
     justify-content: space-around;
+    min-width: min-content;
     margin-bottom: 0px;
 }
 
 .project-image{
     width: 100%;
     height: 100%;
+    transition: transform .3s;
+}
+
+.project-image:hover{
+    transform: scale(1.05);
 }
 
 .project-title{
     color: white;
     text-align: center;
+    padding-top: 10px;
 }
 
 .project-description{
@@ -121,3 +130,11 @@ a:visited {
     text-decoration: none; 
     color: rgb(255, 255, 255); 
    }
+
+a:hover{
+    color: #1E6FD9;
+}
+
+a{
+    text-decoration: none;
+}

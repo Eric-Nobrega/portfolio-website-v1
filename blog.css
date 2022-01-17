@@ -1,0 +1,97 @@
+/* Override Default Browser Margin & Padding Properties*/
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    background-color: #262A2B;
+    padding: 50px;
+}
+
+/* .homepage will inherit height/border properties from section above */
+.homepage{
+    background-color: #262A2B;
+    /*100% of Viewport Height = Adapts to the browser the page is being viewed on*/
+    height: 75vh;
+    color: white;
+    /* Default Font Size For Homepage Section*/
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    min-width: fit-content;
+    justify-content: space-around;
+    font-size: 25px;  
+}
+
+li{
+    width: fit-content;
+    padding: 15px;
+    text-decoration: none;
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+   }
+
+.aboutme{
+    width: 800px;
+}
+
+
+.post{
+    display: flexbox;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size:50px;
+    line-height: 85px;
+}
+
+.images{
+    float: right;
+    font-size: 18px;
+}
+
+.image{
+    float: right;
+    box-shadow: 10px 10px 10px black;
+    margin-top: 100px;
+    border-radius: 20px;
+    transition: transform .3s;
+}
+
+.image:hover{
+    transform: scale(1.05);
+}
+
+
+a:hover{
+    color: #1E6FD9;
+}
+
+a{
+    text-decoration: none;
+}
